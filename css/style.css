@@ -146,7 +146,7 @@ section{
 }
 
 .is-open{
-    opacity: 0;
+    opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
@@ -161,6 +161,7 @@ section{
     background-color: #fcfcfc;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn{
@@ -253,7 +254,7 @@ section{
     position: absolute;
     left: 0;
     margin-left: 43px;
-    margin-top: 14px;
+    margin-top: 8px;
     fill: #2E2F42;
 }
 
@@ -262,16 +263,25 @@ section{
 }
 
 .text-textarea{
-    width: 360px;
+    width: 100%;
     height: 120px;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     resize: none;
     margin-bottom: 16px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 4%;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     padding: 8px 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-textarea:focus{
+    border-color: #4D5AE5;
 }
 
 .text-textarea::placeholder{
@@ -642,6 +652,7 @@ section{
 .footer-wrap{
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
 }
 
 .first {
@@ -695,7 +706,65 @@ section{
 }
 
 /*==========FORM-FOOTER==========*/
-.third{
+.footer-text{
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-form{
+    display: flex;
+}
+
+.footer-email{
+    gap: 24px;
+}
+
+.footer-email-input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-email-input::placeholder{
+    color: #FFFFFF;
+}
+
+.footer-btn{
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+}
+
+.footer-email-icon{
+    margin-left: 16px;
+    fill: #ffffff;
+}
+
+/* .third{
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -706,32 +775,6 @@ section{
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-.footer-email-text{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-
-.footer-email-input{
-    width: 264px; 
-    height: 40px; 
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    background-color: transparent;
-}
-
-.footer-email-input::placeholder{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    color: #FFFFFF;
 }
 
 .footer-btn{
@@ -747,4 +790,4 @@ section{
 .footer-email-icon{
     margin-left: 16px;
     fill: #FFFFFF;
-}
+} */
