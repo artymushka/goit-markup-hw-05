@@ -146,7 +146,7 @@ section{
 }
 
 .is-open{
-    opacity: 1;
+    opacity: 0;
     visibility: visible;
     pointer-events: auto;
 }
@@ -708,6 +708,7 @@ section{
 /*==========FORM-FOOTER==========*/
 .footer-text{
     margin-bottom: 16px;
+    margin-left: 24px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -716,9 +717,6 @@ section{
 
 .footer-form{
     display: flex;
-}
-
-.footer-email{
     gap: 24px;
 }
 
@@ -763,31 +761,3 @@ section{
     margin-left: 16px;
     fill: #ffffff;
 }
-
-/* .third{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-left: 80px;
-}
-
-.footer-form{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer-btn{
-    width: 165px;
-    height: 40px;
-    padding: 8px, 24px, 8px, 24px;
-    border-radius: 4px;
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.footer-email-icon{
-    margin-left: 16px;
-    fill: #FFFFFF;
-} */
