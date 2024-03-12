@@ -427,46 +427,54 @@
             <form class="contact-form" action="/my-handling-form-page" method="post">
                 <div class="form-list">
                     <label class="contact-form-text" for="user-name">Name</label>
-                    <input class="contact-form-input" type="text" id="user-name" name="user-name"
-                        pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+" title="Vlad">
-                    <svg class="contact" width="18" height="24">
-                        <use href="./images/icons.svg#icon-person"></use>
-                    </svg>
+                    <div class="form-input">
+                        <input class="contact-form-input" type="text" id="user-name" name="user-name"
+                            pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+">
+                        <svg class="contact" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-list">
                     <label class="contact-form-text" for="user-phone">Phone</label>
-                    <input class="contact-form-input" type="tel" id="user-phone" name="user-phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
-                    <svg class="contact" width="18" height="24">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
+                    <div class="form-input">
+                        <input class="contact-form-input" type="tel" id="user-phone" name="user-phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                        <svg class="contact" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-list">
                     <label class="contact-form-text" for="user-email">Email</label>
-                    <input class="contact-form-input" type="email" id="user-email" name="user-email" required>
-                    <svg class="contact" width="18" height="24">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
+                    <div class="form-input">
+                        <input class="contact-form-input" type="email" id="user-email" name="user-email" required>
+                        <svg class="contact" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-list">
                     <label class="contact-form-text" for="user-comment">Comment</label>
-                    <textarea class="contact-form-input text-textarea" id="user-comment" name="user-comment"
-                        placeholder="Text input"></textarea>
+                    <div class="form-input">
+                        <textarea class="contact-form-input text-textarea" id="user-comment" name="user-comment"
+                            placeholder="Text input"></textarea>
+                    </div>
                 </div>
                 <div class="form-list-checkbox">
                     <input class="contact-form-checkbox visually-hidden" type="checkbox" id="user-privacy"
                         name="user-privacy" value="true" required>
-                    <label for="user-privacy" class="contact-form-privacy-policy">
-                        <span class="contact-form-privacy-policy-checkbox">
-                            <svg class="contact-checkbox-icon" width="10" height="10">
-                                <use href="./images/icons.svg#icon-checkmark"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a class="privacy_policy" href="">
-                            Privacy Policy
-                        </a>
-                    </label>
+                        <label for="user-privacy" class="contact-form-privacy-policy">
+                            <span class="contact-form-privacy-policy-checkbox">
+                                <svg class="contact-checkbox-icon" width="10" height="10">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a class="privacy_policy" href="">
+                                Privacy Policy
+                            </a>
+                        </label>
                 </div>
                 <button class="contact-form-btn" type="submit">Send</button>
             </form>
